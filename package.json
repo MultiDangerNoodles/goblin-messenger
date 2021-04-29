@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "cross-env NODE_ENV=production node server/server.js",
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "concurrently \"cross-env NODE_ENV=development webpack serve\" \"cross-env NODE_ENV=development nodemon server/server.js\""
+    "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open\" \"cross-env NODE_ENV=development nodemon server/server.js\""
   },
   "jest": {
     "verbose": true
@@ -36,6 +36,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.12.6",
     "path": "^0.12.7",
+    "pg": "^8.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
@@ -58,6 +59,7 @@
     "jest": "^23.6.0",
     "jest-puppeteer": "^3.4.0",
     "nodemon": "^2.0.7",
+    "postgres": "^1.0.2",
     "redux-devtools-extension": "^2.13.9",
     "style-loader": "^2.0.0",
     "supertest": "^3.3.0",
